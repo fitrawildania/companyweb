@@ -1,0 +1,43 @@
+/* dashboard.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#sidebar-wrapper {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+}
+
+.list-group-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+@media (min-width: 768px) {
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -250px;
+    }
+}
